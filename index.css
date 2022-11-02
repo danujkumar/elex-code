@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.map{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+.map div{
+    height: fit-content;
+    width: fit-content;
+}
+
+.group{
+    transform:rotate(90deg);
+}
+
+.initialPath{
+    transform-box:fill-box;
+    transform-origin:center;
+    opacity:0;
+    transition: opacity 1.5s;
+}
+
+
+
