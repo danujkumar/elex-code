@@ -1,0 +1,132 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+button{
+    margin: 0.2rem;
+    padding: 0.5rem;
+    color: rgb(59 130 246);
+    border-style: none;
+    border: 3px solid rgb(59 130 246);
+    border-radius: 3rem;
+    font-weight: bolder;
+}
+button:hover{
+    color: white;
+    background-color: rgb(59 130 246);
+    border: 3px solid white;
+}
+#dark-btn{
+    border: none;
+    float: right;
+    background-color: black;
+    padding: 0.4rem;
+    font-weight:300;
+    font-size: 0.7rem;
+    color: white;
+}
+#light-btn{
+    border: none;
+    float: right;
+    background-color: white;
+    padding: 0.4rem;
+    font-weight:300;
+    font-size: 0.7rem;
+    color: black;
+    display: none;
+}
+#locate:hover{
+    background-color: #ffdbac ;
+}
+input{
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+#header{
+    text-align: center;
+    padding: 0.7rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+    background-color: #c68642;
+    color: white;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c68642;
+    padding: 0.5rem;
+}
+.top-left{
+    display: inline;
+}
+.top-right{
+    float: right;
+    display: inline;
+}
+#content{
+    background-color: 	#ffdbac;
+}
+
+@media(max-width:600px){
+    .top-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-right{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        padding: 0.25rem;
+    }
+    input{
+        padding: 0.25rem;
+    }
+}
+
+/* ANUJ */
+
+.map{
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+    padding: 10rem 0;
+}
+
+@media(max-width:600px){
+    .map{
+        padding: 7rem 0;
+    }
+}
+
+@media(max-width:500px){
+    .map{
+        padding: 5rem 0;
+    }
+    #dark-btn, #light-btn{
+        display: none;
+    }
+}
+
+.map div{
+    height: fit-content;
+    width: fit-content;
+}
+
+.group{
+    transform:rotate(90deg);
+}
+
+.initialPath{
+    transform-box:fill-box;
+    transform-origin:center;
+    opacity:0;
+    transition: opacity 1.5s;
+}
