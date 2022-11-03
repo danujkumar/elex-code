@@ -1,29 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 html, body{
     margin: 0;
     padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 button{
     margin: 0.2rem;
     padding: 0.5rem;
     color: rgb(59 130 246);
     border-style: none;
-    border: 3px solid rgb(59 130 246);
-    border-radius: 3rem;
+    border: 2px solid rgb(59 130 246);
+    border-radius: 1rem;
     font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
 }
 button:hover{
     color: white;
     background-color: rgb(59 130 246);
     border: 3px solid white;
+    box-shadow: 2px 2px 3px black;
 }
 #dark-btn{
     border: none;
     float: right;
-    background-color: black;
+    background-color: rgb(62, 62, 62);
     padding: 0.4rem;
     font-weight:300;
     font-size: 0.7rem;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #light-btn{
     border: none;
@@ -34,6 +41,7 @@ button:hover{
     font-size: 0.7rem;
     color: black;
     display: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #locate:hover{
     background-color: #ffdbac ;
@@ -53,15 +61,20 @@ nav{
     text-align: center;
     padding: 0.7rem;
     font-weight: 900;
-    font-size: 1.5rem;
+    padding-top: 2rem;
+    font-size: 2.5rem;
     background-color: #c68642;
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #top{
     display: flex;
     justify-content: space-between;
     background-color: #c68642;
     padding: 0.5rem;
+}
+nav{
+    box-shadow: 0px 0.3px 5px 0.5px black;
 }
 .top-left{
     display: inline;
@@ -112,6 +125,9 @@ nav{
     }
     #dark-btn, #light-btn{
         display: none;
+    }
+    button{
+        padding: 0.3rem;
     }
 }
 

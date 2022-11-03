@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito+Sans&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+button{
+    margin: 0.2rem;
+    padding: 0.5rem;
+    color: rgb(59 130 246);
+    border-style: none;
+    border: 2px solid rgb(59 130 246);
+    border-radius: 1rem;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+}
+button:hover{
+    color: white;
+    background-color: rgb(59 130 246);
+    border: 3px solid white;
+    box-shadow: 2px 2px 3px black;
+}
+#dark-btn{
+    border: none;
+    float: right;
+    background-color: rgb(62, 62, 62);
+    padding: 0.4rem;
+    font-weight:300;
+    font-size: 0.7rem;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#light-btn{
+    border: none;
+    float: right;
+    background-color: white;
+    padding: 0.4rem;
+    font-weight:300;
+    font-size: 0.7rem;
+    color: black;
+    display: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#locate:hover{
+    background-color: #ffdbac ;
+}
+input{
+    margin: 0.2rem;
+    padding: 0.5rem;
+}
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+#header{
+    text-align: center;
+    padding: 0.7rem;
+    font-weight: 900;
+    padding-top: 0rem;
+    font-size: 2.5rem;
+    background-color: #c68642;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c68642;
+    padding: 0.5rem;
+}
+nav{
+    box-shadow: 0px 0.3px 5px 0.5px black;
+}
+#locate:hover{
+    background-color:blue;
+    border: 3px solid grey;
+}
+.top-left{
+    display: inline;
+}
+.top-right{
+    float: right;
+    display: inline;
+}
+#content{
+    background-color: 	#ffdbac;
+    padding-top: 8rem;
+}
+
+/* INFO */
+
+.p1{
+    font-size: 1.5rem;
+}
+.p2{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.p3{
+    line-height: 1.7rem;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: #c68642;
+    color: white;
+    border-radius: 10px;
+  }
+
+.card p{
+    padding: 0;
+    margin: 0.5rem 0;
+    font-size: small;
+}
+
+.card h4{
+    margin: 0;
+    padding: 0.5rem 0.2rem;
+    font-size: 1rem;
+    background-color: #ffdbac;
+    color: black;
+}
+
+.card a{
+    text-decoration: none;
+    color: rgb(48, 48, 48);
+}
+  
+  .card:hover {
+    box-shadow: 2px 2px 4px 1px black;
+  }
+  
+  .card-container {
+    padding: 2px 16px;
+  }
+
+.link:hover{
+    text-decoration: underline;
+    color: #ffdbac;
+}
+
+.link2{
+    float: right;
+}
+
+.row{
+    padding: 0 5rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.p2{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.row p{
+    padding:0.5rem;
+}
+
+.row li{
+    line-height: 1.5rem;
+}
+
+@media(max-width:650px){
+    .card{
+        margin: 0.6rem;
+        padding: 0.5rem;
+        width: 30%;
+    }
+    #dark-btn{
+        display: none;
+    }
+    .link{
+        font-size: 0.8rem;
+    }
+    .link2{
+        float: none;
+    }
+}
+
+@media(max-width:650px){
+    .row{
+        padding: 1rem;
+    }
+}
+
+.goback{
+    font-size: 1rem;
+    position: fixed;
+    top: 1.2rem;
+    left: 2rem;
+    text-decoration: none;
+    color: white;
+}
+.goback:hover{
+    text-decoration: underline;
+    color: #ead6bd;
+}
